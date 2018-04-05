@@ -1,5 +1,12 @@
 # ffmpeg_sample
 
+1.ffmpegコマンドを動かす    
+2.ffmpeg-playerをビルド    
+
+
+
+# 1.ffmpegコマンドを動かす
+
 なるべく理解したいffmpeg    
 http://d.hatena.ne.jp/zariganitosh/20150619/understand_ffmpeg    
 こちらを元に勉強致しました。
@@ -83,4 +90,55 @@ ffmpeg -i shibuya.mp4 -ss 1:10 -to 2:30 shibuya_110_to_230.mp4
 #ビデオの先頭から、30フレーム使ってフェードインさせる。
 ffmpeg -i shibuya.mp4 -vf "fade=in:0:30" shibuya_fade-in.mp4
 ```
+
+
+# 2.ffmpeg-playerをビルド
+
+MacでのSDLの導入    
+https://qiita.com/inomasa/items/d5a9c6ebfb2ff2e40003    
+
+SDL version 2.0.8 (stable)のruntimeとsourceをダウンロード。    
+https://www.libsdl.org/download-2.0.php    
+
+
+```
+unzip SDL2-2.0.8.zip
+cd SDL2-2.0.8
+./configure
+make
+sudo make install
+
+unzip SDL2_mixer-2.0.2
+cd SDL2_mixer-2.0.2
+./configure
+make
+sudo make install
+```
+
+下記に入ったことを確認。
+
+```
+ls /usr/local/include/SDL/
+ls /usr/local/include/SDL2/
+ls /usr/local/lib/ | grep SDL
+```
+
+
+```
+#バイナリを移動
+sudo cp -R SDL2.framework/ /Library/Frameworks/SDL2.framework
+sudo cp -R SDL2_mixer.framework/ /Library/Frameworks/SDL2_mixer.framework
+```
+
+
+
+```
+#ちなみにbrewでも入るけど、入る場所がlocal以下のフォルダに入る。
+brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
+```
+
+
+
+
+
 
