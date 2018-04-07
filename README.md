@@ -2,7 +2,7 @@
 
 1.ffmpegコマンドを動かす    
 2.ffmpeg-playerをビルド    
-
+3.ffmpegを動かす    
 
 
 # 1.ffmpegコマンドを動かす
@@ -94,6 +94,10 @@ ffmpeg -i shibuya.mp4 -vf "fade=in:0:30" shibuya_fade-in.mp4
 
 # 2.ffmpeg-playerをビルド
 
+これの勉強    
+https://github.com/Akagi201/ffmpeg-player    
+
+
 MacでのSDLの導入    
 https://qiita.com/inomasa/items/d5a9c6ebfb2ff2e40003    
 
@@ -137,6 +141,18 @@ sudo cp -R SDL2_mixer.framework/ /Library/Frameworks/SDL2_mixer.framework
 brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
 ```
 
+# 3.ffmpegを動かす
+
+
+
+```
+cd ffmpeg-player/simple
+./start_build.sh
+cd build
+./ffmpeg_player_simple
+```
+
+ffmpegで動画再生される。
 
 
 
