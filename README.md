@@ -158,3 +158,10 @@ ffmpegで動画再生される。
 
 
 
+# memo
+
+https://gist.github.com/Brainiarc7/ebf3091efd2bf0a0ded0f9715cd43a38
+
+https://github.com/leandromoreira/digital_video_introduction
+
+https://github.com/leandromoreira/ffmpeg-libav-tutorial
