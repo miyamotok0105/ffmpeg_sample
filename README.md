@@ -165,3 +165,7 @@ https://gist.github.com/Brainiarc7/ebf3091efd2bf0a0ded0f9715cd43a38
 https://github.com/leandromoreira/digital_video_introduction
 
 https://github.com/leandromoreira/ffmpeg-libav-tutorial
+
+- 企画書
+細かく書いてある   
+http://www.itu.int/rec/T-REC-H.264-201704-I/en    
